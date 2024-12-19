@@ -5,4 +5,4 @@ FROM httpd:latest
 COPY index.html /usr/local/apache2/htdocs/
 
 # Expose the default Apache port (80)
-EXPOSE 80
+EXPOSE 60
