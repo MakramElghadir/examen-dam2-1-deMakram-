@@ -1,16 +1,16 @@
 <?php
-    echo "Eternal glory to the Omnissiah!";
+$servername = "db"; // Name of the MySQL service in docker-compose.yml
+$username = "user";
+$password = "user_password";
+$dbname = "my_database";
 
-    echo "<p>Current Date and Time: " . date("Y-m-d H:i:s") . "</p>";
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    echo "<p>PHP Version: " . phpversion() . "</p>";
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Connected successfully to the database!";
+}
 
-    echo "<p>Apache Version: " . apache_get_version() . "</p>";
-
-    $server_ip = $_SERVER['SERVER_ADDR'];
-    echo "<p>Server IP: " . $server_ip . "</p>";
-
-    $client_ip = $_SERVER['REMOTE_ADDR'];
-    echo "<p>Client IP: " . $client_ip . "</p>";
-    
+$conn->close();
 ?>
