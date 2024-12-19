@@ -12,5 +12,5 @@
 
     $client_ip = $_SERVER['REMOTE_ADDR'];
     echo "<p>Client IP: " . $client_ip . "</p>";
-    ?>
+    
 ?>
