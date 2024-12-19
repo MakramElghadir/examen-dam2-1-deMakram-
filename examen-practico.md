@@ -29,7 +29,7 @@ Apache es un servidor web muy interesante para vosotros, es **muy** diferente de
 
 ## Sprint 2: Apache
 
-1. Crea una carpeta llamada `apache` y dentro de ella crea un archivo llamado `Dockerfile`.
+1. Carpeta `apache` creada con y dentro de ella crea un archivo llamado `Dockerfile`.
 2. Haz un servidor web Apache que sirva un archivo `index.html` que diga "Hola Mundo".
 3. Construye la imagen y lánzala localmente.
 4. Documenta como has hecho estos pasos en el archivo `README.md`.
