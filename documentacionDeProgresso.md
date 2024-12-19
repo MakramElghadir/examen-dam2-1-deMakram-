@@ -55,7 +55,7 @@ Recuerda que un archivo `Dockerfile` define una imagen o servicio y un archivo `
 3. Gracias a `docker compose` y configuracion del archivo `.yml`, el `docker-compose.yml` estaba escribidos con los servicios necesarios para lanzar el servidor web Apache.
 4. Archivo `index.php` modificado, con conexión a la base de datos MySQL y systema de desplego de conecto o de error.
 5. Archivo `users.php` creado, cpm todos los usuarios de la tabla `users` dentra la base de datos.
-6. Construye el entorno y lánzalo localmente.
+6. entorno construado y lánzalo localmente.
 7. Documenta como has hecho estos pasos en el archivo `README.md`.
 8. Crea un contenedor en `docker hub` con el entorno que has creado y documenta como lo has hecho en el archivo `README.md`.
 9. Modifica la página principal de `docker hub` con el comando necesario para lanzar el entorno con un solo comando.
