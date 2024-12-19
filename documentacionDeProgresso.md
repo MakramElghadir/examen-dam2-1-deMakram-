@@ -19,12 +19,12 @@
 
 1. Carpeta`apache-php` creada.
 2. archivo `index.php` creada con:
-    [X] Un mensaje de hola mundo, como lo quieras hacer.
-    [X] La fecha y hora actual.
-    [X] La versión de PHP que estás utilizando.
-    [X] La versión de Apache que estás utilizando.
-    [X] La IP del servidor.
-    [X] La IP del cliente.
+    - [X] Un mensaje de hola mundo, como lo quieras hacer.
+    - [X] La fecha y hora actual.
+    - [X] La versión de PHP que estás utilizando.
+    - [X] La versión de Apache que estás utilizando.
+    - [X] La IP del servidor.
+    - [X] La IP del cliente.
 3. Imagen lánzala localmente y contenido de `index.php` desplegado correctamente.
 
 ## Sprint 4: PHP
@@ -32,7 +32,7 @@
 1. Trabajando en `apache-php` continuada.
 2. Archivo `info.php` creada con la función `phpinfo()` dentro ello.
 3. Archivo `random.php` creado:
-    [X] Un número aleatorio entre 1 y 100.
-    [X] Un mensaje que diga si el número es par o impar.
-    [X] Un elemento aleatorio de un array que contenga al menos 5 elementos, a tu elección.
+    - [X] Un número aleatorio entre 1 y 100.
+    - [X] Un mensaje que diga si el número es par o impar.
+    - [X] Un elemento aleatorio de un array que contenga al menos 5 elementos, a tu elección.
 4. Imagen lánzala localmente y contenido de `random.php` desplegado correctamente.
