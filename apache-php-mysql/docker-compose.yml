@@ -1,0 +1,33 @@
+version: "3.8"  # Specify the Docker Compose version
+
+services:
+  apache:
+    image: httpd:latest  # Apache image
+    ports:
+      - "80:80"  # Bind port 80 on the host to port 80 in the container
+    volumes:
+      - ./apache-php:/usr/local/apache2/htdocs/  # Mount local directory to Apache's root
+    networks:
+      - webnet  # Define the network for this service
+
+  mysql:
+    image: mysql:8.0  # MySQL image
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # Set the root password
+      MYSQL_DATABASE: mydatabase  # Optionally, create a default database
+      MYSQL_USER: user  # Optionally, create a user
+      MYSQL_PASSWORD: userpassword  # Optionally, set the user's password
+    ports:
+      - "3306:3306"  # Bind port 3306 for MySQL access
+    volumes:
+      - mysql-data:/var/lib/mysql  # Persist MySQL data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Initialize MySQL with SQL scripts
+    networks:
+      - webnet  # Ensure both services are in the same network
+
+networks:
+  webnet:  # Define the network shared by Apache and MySQL
+    driver: bridge
+
+volumes:
+  mysql-data:  # Define a volume to persist MySQL data
